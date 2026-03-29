@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shiva Kumar - Portfolio</title>
+    <link rel="stylesheet" href="/CSS/week-2.2.css">
+</head>
+<body>
+    <!-- 2. Header with Name and Navigation -->
+    <header>
+        <h1>Portfolio with Contact Form + Validation</h1>
+        <nav>
+            <a href="/Assignments/home.html">Home</a>
+            <a href="/Assignments/projects.html">Projects</a>
+            <a href="/Assignments/contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- 3. Main Section -->
+    <main>
+
+        <!-- 4. About Me Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <!-- 5. Image with Alt Attribute -->
+            <img src="https://thearsenale.com/cdn/shop/products/tata-by-tamarit-motorcycles-642020.jpg?v=1704596581&width=1946" alt="Profile picture of Shiva Kumar">
+            <p>Hello! I'm <strong>Shiva Kumar</strong>, a beginner web developer passionate about learning HTML, CSS, JavaScript, and AEM.</p>
+
+            <!-- 6. Skills List ol/ul-->
+            <h3>My Skills</h3>
+            <ul>
+                <li>HTML5 & CSS3</li>
+                <li>JavaScript</li>
+                <li>Responsive Web Design</li>
+                <li>Adobe Experience Manager (AEM)</li>
+            </ul>
+            <h4>Additional Skills</h4>
+            <ol>
+                <li>Adobe Experience Manager (AEM)</li>
+                <li>Java</li>
+                <li>Devops Tools</li>
+                <li>Jira, SNOW, etc</li>
+            </ol>
+        </section>
+
+        <!-- 7. Article Describing a Sample Project -->
+        <article id="project">
+            <h2>Sample Project: Personal Portfolio</h2>
+            <p>This project demonstrates the use of semantic HTML structure, built-in form validation, and simple JavaScript validation for client-side checks.</p>
+        </article>
+
+        <!-- 8. Contact Form -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+
+            <!-- 9. HTML5 Validation Attributes + 12. Accessibility Labels -->
+            <form id="contactForm" onsubmit="return validateForm()" novalidate>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" 
+                       required minlength="3" 
+                       aria-required="true"
+                       placeholder="Enter your full name">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" 
+                       required 
+                       aria-required="true"
+                       placeholder="example@domain.com">
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" 
+                       pattern="[0-9]{10}" 
+                       placeholder="10-digit phone number" 
+                       aria-describedby="phoneHelp">
+                <small id="phoneHelp">Format: 1234567890</small>
+
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" placeholder="(Optional)">
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" 
+                          required minlength="10" 
+                          aria-required="true"
+                          placeholder="Type your message here..."></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- 11. Footer Section -->
+    <footer>
+        <p>&copy; 2025 Shiva Kumar</p>
+    </footer>
+
+    <!-- 10. JavaScript-Based Validation -->
+    <script>
+        /* Simple JavaScript Validation Rule:
+           Ensures that the name field contains only letters and spaces.
+           (HTML5 checks length, this JS checks content) */
+        function validateForm() {
+            const name = document.getElementById("name").value.trim();
+            const namePattern = /^[A-Za-z\s]+$/;
+
+            if (!namePattern.test(name)) {
+                alert("Name must contain only letters and spaces.");
+                return false; // Prevent form submission
+            }
+
+            // Let HTML5 handle other field validations
+            return true;
+        }
+    </script>
+</body>
+</html>

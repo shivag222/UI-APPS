@@ -1,0 +1,14 @@
+selector {
+    property :value;
+}
+
+h1{
+    color: red;
+}
+
+logo{
+     color: blue;
+}
+bg{
+    background-color: green;
+}

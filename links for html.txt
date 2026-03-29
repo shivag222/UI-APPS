@@ -1,0 +1,14 @@
+emmets --> html shortcuts
+
+
+
+
+Programming ai tools
+
+https://replit.com/
+https://lovable.dev/
+https://bolt.new/
+
+https://www.w3schools.com/git/default.asp
+
+git remote add origin git@github.com:shivag222/Html_Learning.git

@@ -1,0 +1,14 @@
+.cards{            
+            width: 286px;
+            height: 168px;
+        }
+.col-2{
+    width: 100px;
+    height: 100px;
+}
+.row{
+    margin: 50px;
+}
+.cardImg{
+    height: 800px;
+}
