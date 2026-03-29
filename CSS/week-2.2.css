@@ -1,0 +1,54 @@
+
+    /* 10. Basic Internal CSS Styling for Readability --> */
+
+    h1,h2,h3 {
+            color: rgb(4, 4, 4);
+            font-style: italic;
+    }
+        body {
+            font-family: Arial;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: #b3c9cd;
+            color: rgb(192, 14, 14);
+            text-align: center;
+            padding: 1px;
+            margin: auto;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        img {
+            width: 150px;
+            border-radius: 50%;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+        }
+        input, textarea {
+            margin-bottom: 10px;
+            padding: 8px;
+            border-color: blue;
+        }
+        button {
+            background-color: #333;
+            color: white;
+            padding: 8px;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #c91818;
+        }

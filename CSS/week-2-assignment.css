@@ -1,0 +1,58 @@
+ /*
+     Basic internal CSS styling
+  -->
+ */          
+        #project h2{
+            color: red;
+            font-style: italic;
+        }
+
+        #contact h2{
+            font-family: Arial, Helvetica, sans-serif;
+            color:yellow;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        img {
+            width: 150px;
+            border-radius: 50%;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+        }
+        input, textarea {
+            margin-bottom: 10px;
+            padding: 8px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }

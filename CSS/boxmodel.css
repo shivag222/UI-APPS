@@ -1,0 +1,20 @@
+.box1{
+    border-width: 10px;
+    border-style:dotted;
+    border-color: red;
+    
+}
+.box2{
+    border-width: 10px;
+    border-style: dashed;
+    border-color: blue;
+}
+.box3{
+border-radius: 10px;
+border-color: green;
+border-style:groove;
+
+}
+.box4{
+    border: 2px solid yellow 
+}
